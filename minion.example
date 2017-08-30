@@ -1,4 +1,3 @@
-
 id: ghost-1
 
 # Do not strip off the colored output from nested results and state outputs
@@ -7,11 +6,12 @@ strip_colors: False
 
 # NO GODS, NO MASTERS!
 file_client: local
-gitfs_provider: pygit2
 
 fileserver_backend:
   - git
   - roots
+
+gitfs_provider: gitpython
 
 gitfs_remotes:
   - https://github.com/dsa-lsc/salt-masterless:
@@ -31,11 +31,10 @@ pillar_roots:
 
 ext_pillar:
   - git:
-    - master  https://github.com/dsa-lsc/salt-masterless:
-      - env: base
+    - master https://github.com/dsa-lsc/salt-masterless.git:
       - root: pillars
+      - env: base
 
-pillar_source_merging_strategy: recurse
 
 #####   Minion module management     #####
 ##########################################
