@@ -16,7 +16,8 @@ dependencies:
     - pkgs:
       - nginx
 
-npm.installed:
-  - name: ghost-cli
-  - require:
-    - pkg: node-install
+install-ghost:
+  npm.installed:
+    - name: ghost-cli
+    - require:
+      - pkg: node-install
