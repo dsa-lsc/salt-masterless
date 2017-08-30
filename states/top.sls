@@ -1,0 +1,7 @@
+
+'base':
+  '*':
+    - users
+
+  'ghost*':
+    - dependencies
