@@ -25,4 +25,16 @@ users:
     ssh_key_type: rsa
     ssh_auth_file:
       - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCxwZ1eoI00pFiTDvXpORxvYi1lVvwk3pQGL+2z/JcX0GhblPLecg+wjcCiJewWVnOJLPgAdiMJ6p9JnGr0PPl8CLb2NQ6Cmw2cAz7bjAo1L5yPAHoEN7qJndZoaU4HLJqtTMZHbzfg/zjj5vJPxIe6fEv8HIgxK6YCj7O31+A0BdGcsT2HxCH0PEYb07MDgOx10INhI5nHiphsDomxkuKpnBcAbPNvgbpzyJBpjYHh1lqSl7d6AGMWYhgYGF9PIWyHj0wz3KvBCV82eBwZblbjC1/LKjKPZNvINxrmjHVbetbwdOXFb/6clMDnRZUOUgltMR9uJV/xztxvLdmLT0kn contact.vansintjan.net
-      
+  paul-williams:
+    fullname: Paul Williams
+    home: /home/paul-williams
+    createhome: True
+    sudouser: True
+    sudoers: True
+    sudo_rules:
+      - ALL=(ALL) NOPASSWD:ALL
+    groups:
+      - users
+    ssh_key_type: rsa
+    ssh_auth_file:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAz4DOCyqwNPQG/I1m/TKeQcJinSgyfawQ7ieJqXJDctICdGk7yO/1NCjYNsqLMxThqBmTXO+kbOLQJnRRojFUy4aPG5x50eBhoY1LBkUsAcGLSwzRG0pUucMBlSUqtPuTqUc+lfM7PM0rYaVU9y1+0MN/PVifLWNzVa7mpbnh4VdTa20ldDOBU8ao6FjlQmZOspip6Cp/hWA84wsMBO7E8/3uaqTmCrmLtQfyBTpoVqy3tHsgHc83ERRrsID4W38s7p16J/uj3HkztZTb4hn0kuYkg1Wzd3uYYXgEfFdBacUblO5SULeoZSvvwxkqwRjdPSlDr2PC8GG8pVu+33eQZQ==
